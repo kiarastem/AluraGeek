@@ -4,42 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
     <title>AluraGeek</title>
 </head>
 <body>
+    <!-- CABECERA -->
     <header class="cabecera">
-        <img class="corazones" src="assets/corazones.svg" alt="corazones">
+        <img class="corazones" src="assets/corazones.svg" alt="Corazones de AluraGeek">
         <h1 class="titulo">AluraGeek</h1>
     </header>
 
+    <!-- PRINCIPAL -->
     <main>
+        <!-- SECCIÓN PRODUCTOS -->
         <section class="productos-seccion">
             <h2 class="productos-titulo">MIS PRODUCTOS:</h2>
             <div class="lista-productos">
-                <!-- Aquí se deben cargar de manera dinamica los productos-->
+                <div class="card">
+                    <img src="assets/producto1.jpg" alt="Producto 1" class="card-imagen">
+                    <h3 class="card-nombre">Producto 1</h3>
+                    <p class="card-precio">$10.00</p>
+                </div>
+                <div class="card">
+                    <img src="assets/producto2.jpg" alt="Producto 2" class="card-imagen">
+                    <h3 class="card-nombre">Producto 2</h3>
+                    <p class="card-precio">$15.00</p>
+                </div>
             </div>
         </section>
 
+        <!-- SECCIÓN AÑADIR PRODUCTOS -->
         <section class="anyadir-producto-seccion">
             <h2 class="anyadir-producto-titulo">AÑADIR PRODUCTO:</h2>
             <form class="formulario">
-                <input type="text" class="nombre-producto" placeholder="nombre..." required>
-                <input type="number" class="precio-producto" placeholder="precio..." required>
-                <input type="url" class="imagen-producto" placeholder="imagen..." required>
-                <button class="enviar">Enviar</button>
-                <button class="limpiar">Limpiar</button>
+                <input type="text" class="nombre-producto" placeholder="Nombre del producto..." required>
+                <input type="number" class="precio-producto" placeholder="Precio del producto..." required>
+                <input type="url" class="imagen-producto" placeholder="URL de la imagen..." required>
+                <button type="submit" class="enviar">Enviar</button>
+                <button type="reset" class="limpiar">Limpiar</button>
             </form>
+        </section>
     </main>
 
-    <footer class="">
-        <img class="corazones" src="assets/corazones.svg" alt="corazones">
+    <!-- PIE DE PÁGINA -->
+    <footer class="pie-de-pagina">
+        <img class="corazones" src="assets/corazones.svg" alt="Corazones de AluraGeek">
         <h1 class="titulo">AluraGeek</h1>
         <p class="subtitulo">DESARROLLADO POR KIARA VILLARROEL</p>
         <p class="alura">ALURA LATAM - 2025</p>
     </footer>
 </body>
-</html> 
+</html>
